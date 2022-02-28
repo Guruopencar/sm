@@ -1,0 +1,16 @@
+        <div class="all-cat">
+            {% for category in categories %}
+              <div class="item-cat">
+                      <div class="image-cat">
+                        <a href="{{ category.href }}" style="padding-bottom: 100%">
+                            <img alt="{{ category.name }}" title="{{ category.name }}" class="img" src="{{ category.image }}" />
+                        </a>
+                      </div>
+                      <div class="caption">
+                        <div class="totlas-cat">{{ category.totals }}</div>
+                        <div class="name-cat"><a href="{{ category.href }}">{{ category.name }}</a></div>
+                      </div>
+                  </div>
+               
+            {% endfor %}
+        </div>
